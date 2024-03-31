@@ -8,6 +8,7 @@ function App() {
       path: "/",
       element: <HomePage />
     },
+    
   ]);
 
   return (
