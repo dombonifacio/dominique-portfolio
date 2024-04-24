@@ -2,14 +2,37 @@
 @tailwind components;
 @tailwind utilities;
 
+@font-face {
+  font-family: Satoshi;
+  font-weight: normal;
+  src: url(../src/assets/fonts/Satoshi_Complete/Fonts/OTF/Satoshi-Regular.otf);
+}
+
+@font-face {
+  font-family: Satoshi;
+  font-weight: bold;
+  src: url(../src/assets/fonts/Satoshi_Complete/Fonts/OTF/Satoshi-Bold.otf);
+}
+
+@font-face {
+  font-family: Satoshi;
+  font-weight: 900; /* Assuming Satoshi-Black is the black font */
+  src: url(../src/assets/fonts/Satoshi_Complete/Fonts/OTF/Satoshi-Black.otf);
+}
+@font-face {
+  font-family: Satoshi;
+  font-style: italic;/* Assuming Satoshi-Black is the black font */
+  src: url(../src/assets/fonts/Satoshi_Complete/Fonts/OTF/Satoshi-Italic.otf);
+}
+
 :root {
-  font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
+  font-family: Satoshi;
   line-height: 1.5;
   font-weight: 400;
 
   color-scheme: light dark;
   color: rgba(255, 255, 255, 0.87);
- 
+
   font-synthesis: none;
   text-rendering: optimizeLegibility;
   -webkit-font-smoothing: antialiased;
@@ -17,8 +40,6 @@
 }
 
 body {
-  width: 100vw;
-  height: 100vh;
   background-image: url("./assets/Background/Background.png");
   background-size: cover;
   background-position: center;

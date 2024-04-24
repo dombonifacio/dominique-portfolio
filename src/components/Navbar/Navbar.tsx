@@ -39,13 +39,17 @@ const Navbar = ({
       name: "Contact",
     },
   ];
-  
+
   return (
     <nav>
       <ul className="flex justify-center gap-x-10">
         {items.map((navItem) => (
           // The parameter of the scrollToSection will point to a ref (nav item)
-          <li><button onClick={() => scrollToSection(navItem.ref)}>{navItem.name}</button></li>
+          <li className="font-semibold md:text-lg">
+            <button onClick={() => scrollToSection(navItem.ref)}>
+              {navItem.name}
+            </button>
+          </li>
         ))}
       </ul>
     </nav>
