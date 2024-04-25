@@ -1,11 +1,14 @@
 import { MutableRefObject, useRef } from "react";
-import Navbar, { NavItem } from "../components/Navbar/Navbar";
+import Navbar from "../components/Navbar/Navbar";
+
 
 const HomePage = () => {
-  const home = useRef<HTMLElement | null>(null);
+ 
   const projects = useRef<HTMLElement | null>(null);
   const about = useRef<HTMLElement | null>(null);
-  const contact = useRef<HTMLElement | null>(null);
+  
+  const skills = useRef<HTMLElement | null>(null);
+
 
   const scrollToSection = (navItem: MutableRefObject<HTMLElement | null>) => {
     if (navItem.current) {
@@ -16,33 +19,33 @@ const HomePage = () => {
 
   // const homeItem = useRef(null)
   return (
-    <div className="max-w-[1160px] mx-auto ">
-      <div className="h-screen p-4 md:p-6">
-        <Navbar
-          home={home}
-          projects={projects}
-          about={about}
-          contact={contact}
-          scrollToSection={scrollToSection}
-        />
-        {/* Make these sections be the parent prop of the navbar's links */}
-        <div className="flex justify-center items-center h-full text-center">
-          <section ref={home}>
-            {/* Hero Section */}
+    <div className=" mx-auto relative max-w-[960px]">
+      <Navbar
+ 
+        skills={skills}
+        projects={projects}
+        about={about}
+      
+        scrollToSection={scrollToSection}
+      />
+
+      <div className="h-screen p-6 md:p-8">
+        <div className="flex justify-center items-center h-full text-center ">
+       
             <div className="">
-              <p className="font-extrabold text-[3.9rem]">
-                &#128075;Kumusta! I'm{" "}
+              <p className="font-extrabold text-[2.8rem] lg:text-[3.8rem] leading-[2.8rem] lg:leading-[5rem]">
+                &#x1F469;&#x200D;&#x1F4BB;Kumusta! I'm{" "}
                 <span className="text-rose">Dominique</span>
               </p>
-              <p className=" text-[1.4rem]">
+              <p className="text-xl leading-lg:text-[1.6rem] mt-6 lg:text-[1.4rem] lg:mt-0">
                 An enthusiastic individual with an interest in{" "}
                 <span className="text-sun">front-end development</span>
-                <br></br>now transitioning into full-stack development
+                <br className="hidden lg:block"></br>&nbsp;now transitioning
+                into full-stack development
               </p>
 
-              {/* Get in touch */}
               <div className="my-24">
-                <p className=" text-lg text-gray-400">
+                <p className=" md:text-lg  text-gray-400">
                   &#128233; Let's get in touch!&nbsp;&nbsp;&nbsp;&nbsp;
                   <span className="border-b-4 border-sun">
                     nikkibonifacio184@gmail.com
@@ -50,13 +53,24 @@ const HomePage = () => {
                 </p>
               </div>
             </div>
-          </section>
+       
         </div>
       </div>
 
+      <section ref={skills}>
+        <div>
+
+          <div className="bg-rose p-2 relative w-14">
+            <div className="absolute">
+
+            <h1 className="text-[2.6rem] font-bold">Skills</h1>
+            </div>
+          </div>
+        </div>
+      </section>
       <section ref={projects}></section>
       <section ref={about}></section>
-      <section ref={contact}></section>
+
     </div>
   );
 };
