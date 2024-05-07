@@ -5,10 +5,9 @@ import { IoMdClose } from "react-icons/io";
 import { TbTools } from "react-icons/tb";
 import { TbAxe } from "react-icons/tb";
 import { TbUser } from "react-icons/tb";
-import Logo from "./Logo/Logo";
+import Logo from "../Logo/Logo";
 
 interface NavItemProps {
-  
   skills: MutableRefObject<HTMLElement | null>;
   projects: MutableRefObject<HTMLElement | null>;
   about: MutableRefObject<HTMLElement | null>;
@@ -24,7 +23,6 @@ export interface NavItem {
 }
 
 const Navbar = ({
- 
   skills,
   projects,
   about,
@@ -32,31 +30,31 @@ const Navbar = ({
   scrollToSection,
 }: NavItemProps) => {
   const items: NavItem[] = [
-  
     {
       ref: skills,
       name: "Skills",
-      icon: <TbTools />
+      icon: <TbTools />,
     },
     {
       ref: projects,
       name: "Projects",
-      icon: <TbAxe />
+      icon: <TbAxe />,
     },
     {
       ref: about,
       name: "About",
-      icon: <TbUser />
+      icon: <TbUser />,
     },
-   
   ];
 
-  const [ showMenu, setShowMenu ] = useState<boolean>(false)
+  const [showMenu, setShowMenu] = useState<boolean>(false);
 
   return (
     <nav className="w-full">
       <div
-        className={`${showMenu ? "bg-[#010613] absolute w-full  p-6 md:hidden" : ""}`}
+        className={`${
+          showMenu ? "bg-[#010613] absolute w-full  p-6 md:hidden" : ""
+        }`}
       >
         <div className={`${showMenu ? "flex justify-end" : "hidden"}`}>
           <button className="mb-2" onClick={() => setShowMenu(false)}>
@@ -88,7 +86,9 @@ const Navbar = ({
 
       <div
         className={`${
-          showMenu ? "hidden md:flex md:gap-x-10 justify-between p-6" : "flex gap-x-10 justify-between p-6 "
+          showMenu
+            ? "hidden md:flex md:gap-x-10 justify-between p-6"
+            : "flex gap-x-10 justify-between p-6 "
         }`}
       >
         <Logo />
