@@ -17,7 +17,7 @@ const HomePage = () => {
 
   // const homeItem = useRef(null)
   return (
-    <div className=" mx-auto relative max-w-[960px]">
+    <div className=" mx-auto relative max-w-[960px]  ">
       <Navbar
         skills={skills}
         projects={projects}
@@ -51,9 +51,13 @@ const HomePage = () => {
         </div>
       </div>
 
-      <section ref={skills} className="p-6 md:p-8">
-        <div>
-          <Title />
+      <section ref={skills}>
+        <div className="p-6 md:p-8 ">
+          <div className="">
+            <Title />
+          </div>
+        
+       
         </div>
       </section>
       <section ref={projects}></section>
