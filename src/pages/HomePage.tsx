@@ -1,7 +1,8 @@
 import { MutableRefObject, useRef } from "react";
 import Navbar from "../components/Navbar/Navbar";
 import Title from "../components/Title/Title";
-import ToolIcon from "../components/Icons/ToolIcon";
+import ToolIcon from "../components/Skills/icons/ToolIcon";
+import SkillsContainer from "../components/Skills/layout/SkillsContainer";
 
 const HomePage = () => {
   const projects = useRef<HTMLElement | null>(null);
@@ -28,7 +29,6 @@ const HomePage = () => {
 
       <div className="h-screen p-6 md:p-8">
         <div className="flex justify-center items-center h-full text-center ">
-        
           <div className="">
             <p className="font-extrabold text-[2.8rem] lg:text-[3.8rem] leading-[2.8rem] lg:leading-[5rem]">
               &#x1F469;&#x200D;&#x1F4BB;Kumusta! I'm{" "}
@@ -53,17 +53,14 @@ const HomePage = () => {
         </div>
       </div>
 
-      <section ref={skills}>
-        <div className=" ">
-          
-          <Title />
-          
-          <div className="">
-            <ToolIcon />
-          </div>
-        </div>
+      <section ref={skills} className="p-6 md:p-8">
+        <Title />
+
+        <SkillsContainer>
+          <ToolIcon />
+        </SkillsContainer>
       </section>
-      <section ref={projects}></section>
+      <section ref={projects} className="p-6 md:p-8"></section>
       <section ref={about}></section>
     </div>
   );
