@@ -54,13 +54,16 @@ const HomePage = () => {
       </div>
 
       <section ref={skills} className="p-6 md:p-8">
-        <Title />
+        <Title title="Skills"/>
 
         <SkillsContainer>
           <ToolIcon />
         </SkillsContainer>
       </section>
-      <section ref={projects} className="p-6 md:p-8"></section>
+      <section ref={projects} className="p-6 md:p-8">
+        <Title title="Projects"/>
+        
+      </section>
       <section ref={about}></section>
     </div>
   );

@@ -1,0 +1,39 @@
+{
+  "projects": [
+    {
+      "id": 1,
+      "name": "UpMeet",
+      "languages": [
+        "React.js",
+        "Express.js",
+        "Node.js",
+        "MongoDB",
+        "TypeScript"
+      ],
+      "description": "A social media platform that allows users to connect and attend exciting events with each other. This project used React.js along with TailwindCSS for the frontend. Created REST APIs using Node.js and self-implemented JSON Web Token authentication. Ticketmaster's DiscoveryAPI was used for fetching the events. This platform is hosted on Vercel."
+    },
+    {
+        "id": 2,
+        "name": "Tinder Clone",
+        "languages": [
+            "React.js",
+            "Firebase",
+            "TailwindCSS"
+        ],
+        "description": "A clone of the Tinder app for the purpose of learning. Users swipe right to like or swipe left to dislike other users' profiles, which include their photos, a short bio, and some of their interests. This project used React.js and TailwindCSS for styling and Firebase for storing data. This platform is hosted on Vercel"
+    },
+    {
+      "id": 3,
+      "name": "CineWatch",
+      "languages": ["React.js", "TailwindCSS"],
+      "description": "Users can discover movies, view the movie's description, and the cast. Implemented filter feature for the genres. This project used React.js and TailwindCSS for styling and was hosted on Netlify."
+    },
+    {
+      "id": 4,
+      "name": "MoodMate",
+      "languages": ["JavaScript", "HTML", "CSS"],
+      "description": "A mood tracker for people who wishes to keep track of their mood to identify patterns in their mood. Built using HTML/CSS, Vanilla Javscript, local storage, and Netlify."
+    }
+
+  ]
+}
