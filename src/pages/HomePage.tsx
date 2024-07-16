@@ -3,6 +3,7 @@ import Navbar from "../components/Navbar/Navbar";
 import Title from "../components/Title/Title";
 import ToolIcon from "../components/Skills/icons/ToolIcon";
 import SkillsContainer from "../components/Skills/layout/SkillsContainer";
+import ProjectsContainer from "../components/Projects/layout/ProjectsContainer";
 
 const HomePage = () => {
   const projects = useRef<HTMLElement | null>(null);
@@ -19,7 +20,7 @@ const HomePage = () => {
 
   // const homeItem = useRef(null)
   return (
-    <div className=" mx-auto relative max-w-[960px]  ">
+    <div className=" mx-auto relative max-w-[1000px]  ">
       <Navbar
         skills={skills}
         projects={projects}
@@ -27,7 +28,7 @@ const HomePage = () => {
         scrollToSection={scrollToSection}
       />
 
-      <div className="h-screen p-6 md:p-8">
+      <div className="h-screen p-6 ">
         <div className="flex justify-center items-center h-full text-center ">
           <div className="">
             <p className="font-extrabold text-[2.8rem] lg:text-[3.8rem] leading-[2.8rem] lg:leading-[5rem]">
@@ -53,15 +54,19 @@ const HomePage = () => {
         </div>
       </div>
 
-      <section ref={skills} className="p-6 md:p-8">
+      <section ref={skills} className="px-6 ">
         <Title title="Skills"/>
 
         <SkillsContainer>
           <ToolIcon />
         </SkillsContainer>
       </section>
-      <section ref={projects} className="p-6 md:p-8">
+      <section ref={projects} className="px-6 mt-14">
         <Title title="Projects"/>
+        <div className="py-10">
+
+        <ProjectsContainer/>
+        </div>
         
       </section>
       <section ref={about}></section>
