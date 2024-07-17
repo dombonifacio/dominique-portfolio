@@ -8,6 +8,7 @@ export default {
         "sun": "#FCAE0A",
         "vader": "#A7A9BE",
       },
+      
     },
   },
   plugins: [],
