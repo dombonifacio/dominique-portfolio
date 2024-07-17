@@ -13,8 +13,8 @@ const HomePage = () => {
 
   const scrollToSection = (navItem: MutableRefObject<HTMLElement | null>) => {
     if (navItem.current) {
-      console.log(navItem, "navitem");
-      navItem.current.focus();
+      console.log(navItem.current, "navitem");
+      navItem.current.scrollIntoView({behavior:"smooth"});
     }
   };
 
@@ -35,11 +35,11 @@ const HomePage = () => {
               &#x1F469;&#x200D;&#x1F4BB;Kumusta! I'm{" "}
               <span className="text-rose">Dominique</span>
             </p>
-            <p className="text-xl leading-lg:text-[1.6rem] mt-6 lg:text-[1.4rem] lg:mt-0">
+            <p className="text-xl leading-9 :text-[1.6rem] mt-6 lg:text-[1.4rem] lg:mt-0">
               An enthusiastic individual with an interest in{" "}
               <span className="text-sun">front-end development</span>
-              <br className="hidden lg:block"></br>&nbsp;now transitioning into
-              full-stack development
+              <br className="hidden lg:block"></br>&nbsp;Browse through my work
+              and let's build amazing things together!
             </p>
 
             <div className="my-24">
@@ -54,22 +54,54 @@ const HomePage = () => {
         </div>
       </div>
 
-      <section ref={skills} className="px-6 ">
-        <Title title="Skills"/>
+      <section ref={skills} className="px-6 scroll-m-20">
+        <Title title="Skills" />
 
         <SkillsContainer>
           <ToolIcon />
         </SkillsContainer>
       </section>
-      <section ref={projects} className="px-6 mt-14">
-        <Title title="Projects"/>
+      <section ref={projects} className="px-6 mt-14 scroll-m-20">
+        <Title title="Projects" />
         <div className="py-10">
-
-        <ProjectsContainer/>
+          <ProjectsContainer />
         </div>
-        
       </section>
-      <section ref={about}></section>
+      <section ref={about} className="px-6 scroll-m-20 ">
+        <Title title="About" />
+        <div className=" py-8 flex items-center gap-x-4">
+          {/* About Me Paragraphs */}
+          <div className="">
+            <p className="text-vader  ">
+              Greetings! I’m Dominique Bonifacio. I have a year and a half of
+              experience in web development, mostly in front-end development.
+            </p>
+            <p className="text-vader  ">
+              <br />
+              I've gained proficient skills in HTML/CSS, Typescript, and
+              ReactJS. Along the way, I’m exploring new technologies, back-end
+              development, practicing Node.js and Flask and plan to transition
+              into full-stack web development in the future!
+            </p>
+            &nbsp;
+            <p className="text-vader ">
+              <span className="text-sun  ">
+                When I'm not coding,
+              </span>{" "}
+              I like to play the GUITAR!!, play video games, snowboarding, and
+              to cook! <p>(still a newbie &#128514;)</p>
+            </p>
+          </div>
+          {/* Memoji Image of me */}
+          <div className="w-full">
+            <img
+              src="https://i.imgur.com/x6GO3Nf.png"
+              className="h-64 w-72 object-cover scale-x-[-1]"
+            ></img>
+          </div>
+        </div>
+      </section>
+      <footer></footer>
     </div>
   );
 };

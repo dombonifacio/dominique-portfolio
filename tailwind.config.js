@@ -5,7 +5,8 @@ export default {
     extend: {
       colors: {
         "rose": "#F25F4C",
-        "sun": "#FCAE0A"
+        "sun": "#FCAE0A",
+        "vader": "#A7A9BE",
       },
     },
   },

@@ -2,6 +2,8 @@
   {
     "id": 1,
     "name": "UpMeet",
+    "link": "https://up-meet.vercel.app/",
+    "github": "https://github.com/dombonifacio/UpMeet",
     "languages": ["React.js", "Express.js", "Node.js", "MongoDB", "TypeScript"],
     "description": "A social media platform that allows users to connect and attend exciting events with each other. This project used React.js along with TailwindCSS for the frontend. Created REST APIs using Node.js and self-implemented JSON Web Token authentication. Used Ticketmaster API to fetch events.",
     "image": "https://i.imgur.com/Jqzq9pH.png"
@@ -10,6 +12,8 @@
     "id": 2,
     "name": "Tinder Clone",
     "languages": ["React.js", "Firebase", "TailwindCSS"],
+    "link": "https://tinder-clone-vercel.vercel.app/",
+    "github": "https://github.com/dombonifacio/Tinder-Clone",
     "image": "https://i.imgur.com/tZW7NPm.png",
     "description": "A clone of the Tinder app for the purpose of learning. Users swipe right to like or swipe left to dislike other users' profiles, which include their photos, a short bio, and some of their interests. This project used React.js and TailwindCSS for styling and Firebase for storing data."
   },
@@ -18,12 +22,16 @@
     "name": "CineWatch",
     "languages": ["React.js", "TailwindCSS"],
     "image": "https://i.imgur.com/Jqzq9pH.png",
+    "github": "https://github.com/dombonifacio/CineWatch",
+    "link": "https://cinewatch.netlify.app/",
     "description": "Users can discover movies, view the movie's description, and the cast. Implemented filter feature for the genres. This project used React.js and TailwindCSS for styling."
   },
   {
     "id": 4,
     "name": "MoodMate",
     "languages": ["JavaScript", "HTML", "CSS"],
+    "github": "https://github.com/dombonifacio/MoodMate",
+    "link": "https://moodmate.netlify.app/",
     "image": "https://i.imgur.com/hf8Q5Hy.png",
     "description": "A mood tracker for people who wishes to keep track of their mood to identify patterns in their mood. Built using HTML/CSS, Vanilla Javscript, local storage."
   }

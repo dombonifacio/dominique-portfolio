@@ -96,10 +96,11 @@ const Navbar = ({
           {items.map((navItem) => (
             // The parameter of the scrollToSection will point to a ref (nav item)
 
-            <li className=" font-semibold md:text-lg ">
+            <li className="flex flex-col font-semibold md:text-lg hover:border-b-4 border-rose ">
               <button onClick={() => scrollToSection(navItem.ref)}>
                 {navItem.name}
               </button>
+             
             </li>
           ))}
         </ul>
