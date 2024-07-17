@@ -2,11 +2,11 @@
   {
     "id": 1,
     "name": "UpMeet",
-    "link": "https://up-meet.vercel.app/",
+    "link": "#",
     "github": "https://github.com/dombonifacio/UpMeet",
     "languages": ["React.js", "Express.js", "Node.js", "MongoDB", "TypeScript"],
     "description": "A social media platform that allows users to connect and attend exciting events with each other. This project used React.js along with TailwindCSS for the frontend. Created REST APIs using Node.js and self-implemented JSON Web Token authentication. Used Ticketmaster API to fetch events.",
-    "image": "https://i.imgur.com/Jqzq9pH.png"
+    "image": ""
   },
   {
     "id": 2,

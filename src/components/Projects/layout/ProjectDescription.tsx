@@ -17,7 +17,7 @@ const ProjectDescription = ({title, description, language, github, link}: Projec
           </h1>
           <div className="flex items-center gap-x-3">
             <a href={link} className=" hover:border-b-4 hover:border-rose text-sun  ">
-              View Site 
+              {link === "#" ? "Coming Soon" : "View Site"}
             </a>
           
             <a href={github}>

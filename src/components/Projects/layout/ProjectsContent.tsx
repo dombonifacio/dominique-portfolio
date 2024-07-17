@@ -23,11 +23,21 @@ const ProjectsContent = ({ data }: ProjectsContentProps) => {
           {index % 2 === 0 ? (
             <>
               <div className="pt-6 md:pt-0">
-                <img
-                  src={project.image}
-                  className="object-cover h-64 w-full rounded-lg"
-                  loading="lazy"
-                ></img>
+                {project.image === "" ? (
+                  <div className="relative bg-gray-600 w-full h-full">
+                    <div className="absolute flex items-center justify-center w-full h-full">
+                      <p className="">Coming Soon</p>
+                    </div>
+                  </div>
+                 
+                ) : (
+                  <img
+                    src={project.image}
+                    className="object-cover h-64 w-full rounded-lg"
+                    loading="lazy"
+                    alt="Project Image"
+                  ></img>
+                )}
               </div>
               <div className="">
                 <ProjectDescription
